@@ -2,11 +2,12 @@ Twitter.NewTweetController = Ember.Controller.extend({
 
   actions: {
     save: function(){
-      var newTweet = {
+      var newTweet = this.store.createRecord('tweet', {
         name: this.get('name'),
         text: this.get('text')
-      }
-      tweets.addObject(newTweet);
+      });
+      newTweet.save();
+
       this.transitionToRoute('tweets');
       this.set("name", "");
       this.set("text", "");
