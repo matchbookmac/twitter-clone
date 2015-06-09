@@ -1,0 +1,14 @@
+<h3>Current Tweets:</h3>
+
+{{#each}}
+  <div class="tweet">
+    <p>{{name}}</p>
+    <p>{{text}}</p>
+  </div>
+{{/each}}
+
+<p>
+  {{#link-to 'new-tweet' class="btn btn-default"}}New Tweet{{/link-to}}
+</p>
+
+{{outlet}}

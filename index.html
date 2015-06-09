@@ -13,18 +13,27 @@
     <!-- bootstrap js -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <!-- Custom Scripts -->
-    <script src='js/scripts.js'></script>
 
+
+    <script src='libs/ember.debug.js'></script>
+    <script src='libs/ember-template-compiler.js'></script>
+    <script src='libs/ember-handlebars-loader-0.0.2.js'></script>
+    <script src='libs/ember-data.js'></script>
+    <script src='libs/localstorage-adapter-0.5.1.js'></script>
+
+    <script src='twitter.js'></script>
+    <script src="router.js"></script>
+    <script src="store.js"></script>
+
+    <script src="routes/tweets.js"></script>
+
+    <script>
+      EmberHandlebarsLoader.loadTemplates([
+        'application', 'tweets', 'new-tweet'
+      ]);
+    </script>
   </head>
   <body>
-    <div class="container">
-      <h1 class="page-header text-center">TEST</h1>
-      <div>
-        Sample Content
-      </div>
-      <div id='jqtest' class="text-center">
-        If you can read this, jQuery may not be working
-      </div>
-    </div>
+
   </body>
 </html>
