@@ -9,6 +9,16 @@
   font-weight: 700;
 }
 
+.new-tweet {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 8px 10px 10px 10px;
+  background-color: rgba( 179, 214, 276, 0.7);
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
 body {
   background-image: url("../img/background.jpg");
 }

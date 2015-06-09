@@ -1,4 +1,5 @@
 Twitter.Router.map(function () {
-  this.resource('tweets', {path: '/'});
-  this.resource('new-tweet');
+  this.resource('tweets', {path: '/'}, function () {
+    this.resource('new-tweet');
+  });
 });
